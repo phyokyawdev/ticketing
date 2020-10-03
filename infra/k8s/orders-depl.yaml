@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: orders
-          image: phyokyaw111/orders
+          image: phyokyawdev/orders
           env:
             - name: NATS_CLIENT_ID
               valueFrom:
