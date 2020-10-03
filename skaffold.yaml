@@ -8,7 +8,7 @@ build:
   local:
     push: false
   artifacts:
-    - image: phyokyaw111/auth
+    - image: phyokyawdev/auth
       context: auth
       docker:
         dockerfile: Dockerfile
@@ -16,7 +16,7 @@ build:
         manual:
           - src: "src/**/*.ts"
             dest: .
-    - image: phyokyaw111/client
+    - image: phyokyawdev/client
       context: client
       docker:
         dockerfile: Dockerfile
@@ -24,7 +24,7 @@ build:
         manual:
           - src: "**/*.js"
             dest: .
-    - image: phyokyaw111/tickets
+    - image: phyokyawdev/tickets
       context: tickets
       docker:
         dockerfile: Dockerfile
@@ -32,7 +32,7 @@ build:
         manual:
           - src: "src/**/*.ts"
             dest: .
-    - image: phyokyaw111/orders
+    - image: phyokyawdev/orders
       context: orders
       docker:
         dockerfile: Dockerfile
@@ -40,7 +40,7 @@ build:
         manual:
           - src: "src/**/*.ts"
             dest: .
-    - image: phyokyaw111/expiration
+    - image: phyokyawdev/expiration
       context: expiration
       docker:
         dockerfile: Dockerfile
@@ -48,7 +48,7 @@ build:
         manual:
           - src: "src/**/*.ts"
             dest: .
-    - image: phyokyaw111/payments
+    - image: phyokyawdev/payments
       context: payments
       docker:
         dockerfile: Dockerfile
